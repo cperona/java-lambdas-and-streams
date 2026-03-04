@@ -1,6 +1,6 @@
 # Java Lambdas and Streams
 Objective:
-Getting familiar with functional interfaces, lambda expressions, method references and the basic use of the Streams API to work with collections. \
+Getting familiar with functional interfaces, lambda expressions, method references and the basic use of the Streams API to work with collections. 
 
 ## Exercise 1
 From a list of String values, write a method that returns a list containing all strings that include the letter 'o'. Print the result.
