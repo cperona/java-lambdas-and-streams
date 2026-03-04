@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.function.*;
 
@@ -43,6 +44,10 @@ public class Main {
         //The same but with method reference
         StringListUtils.printMonthsWithMethodReference(months);
 
+        //# Exercise 5
+        //Create a Functional Interface and use it
+        PiValue piValue = () -> 3.1415;
+        System.out.println("\nPi Value: " + piValue.getPiValue());
 
     }
 }
