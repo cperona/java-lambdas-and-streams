@@ -25,3 +25,5 @@ Using the same list as in the previous exercise, sort it in reverse order, from 
 
 ## Exercise 8
 Create a functional interface containing a method named reverse() that receives and returns a String. In the main() method, implement the method body using a lambda expression so that it returns the reversed version of the input string. Invoke the interface instance with a string argument and verify that the result is correct.
+
+#ITA.S1.08
