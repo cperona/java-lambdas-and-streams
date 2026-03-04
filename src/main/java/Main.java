@@ -1,7 +1,7 @@
 import java.util.ArrayList;
-import java.util.Comparator;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
-import java.util.function.*;
 
 public class Main {
     public static void main() {
@@ -48,6 +48,15 @@ public class Main {
         //Create a Functional Interface and use it
         PiValue piValue = () -> 3.1415;
         System.out.println("\nPi Value: " + piValue.getPiValue());
+
+        //# Exercise 6
+        //Order a stringList by length from shortest to longest.
+        //Using a lambda
+        Collections.sort(stringList, (o1, o2) -> o1.length() - o2.length());
+
+        //# Exercise 7
+        //Order stringList by length from longest to shortest.
+        Collections.sort(stringList, (o1, o2) -> o2.length() - o1.length());
 
     }
 }
