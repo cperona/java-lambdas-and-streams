@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main() {
@@ -58,5 +55,13 @@ public class Main {
         //Order stringList by length from longest to shortest.
         Collections.sort(stringList, (o1, o2) -> o2.length() - o1.length());
 
+        //# Exercise 8
+        //Create a Functional Interface with reverse() method and inject lambda
+        Reverser reverser = s -> new StringBuilder(s).reverse().toString();
+        
+        String testString = "Hello";
+        String reversedString = reverser.reverse(testString);
+
+        System.out.println("Reversed string: " + reversedString);
     }
 }
